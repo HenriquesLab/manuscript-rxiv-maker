@@ -1,7 +1,7 @@
-"""Statistical analysis utilities for the example manuscript.
+"""Statistical analysis utilities for the Rxiv-Maker preprint.
 
 This module provides advanced statistical functions that demonstrate
-the power of executable manuscripts with sophisticated data analysis.
+the power of executable preprints with sophisticated data analysis.
 """
 
 from typing import Any, Dict, List

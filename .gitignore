@@ -147,3 +147,9 @@ MANUSCRIPT/**/*.bbl
 MANUSCRIPT/**/*.blg
 MANUSCRIPT/**/*.log
 MANUSCRIPT/**/*.out
+
+
+**/.rxiv_cache/
+**/__pycache__/
+.gemini/
+gha-creds-*.json
