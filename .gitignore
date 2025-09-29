@@ -1,0 +1,138 @@
+# Rxiv-Maker Generated Files
+# =============================
+
+# Output directories
+output/
+**/output/
+
+# Generated PDFs (except final named PDFs)
+MANUSCRIPT.pdf
+manuscript.pdf
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# LaTeX intermediate files
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.bcf
+*.run.xml
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# R temporary files
+.RData
+.Rhistory
+*.Rout
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Figure generation temporary files
+*.tmp
+*.temp
+*_temp.*
+
+# Cache directories
+.rxiv_cache/
+*/.rxiv_cache/
+
+# OS generated files
+# ===================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# Editor files
+# =============
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Development and testing
+# =======================
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Temporary directories
+tmp/
+temp/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Keep these important files
+# ==========================
+!README.md
+!LICENSE
+!MANUSCRIPT/
+!MANUSCRIPT/**
+
+# But ignore any output in MANUSCRIPT
+MANUSCRIPT/output/
+MANUSCRIPT/**/*.pdf
+MANUSCRIPT/**/*.aux
+MANUSCRIPT/**/*.bbl
+MANUSCRIPT/**/*.blg
+MANUSCRIPT/**/*.log
+MANUSCRIPT/**/*.out
