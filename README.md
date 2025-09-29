@@ -1,17 +1,17 @@
-# Example Manuscript for Rxiv-Maker
+# Rxiv-Maker: Official Preprint & Comprehensive Example
 
-This repository contains a complete example manuscript demonstrating the capabilities of [rxiv-maker](https://github.com/HenriquesLab/rxiv-maker), a tool for writing scientific preprints in Markdown with automated figure generation.
+This repository contains the official rxiv-maker preprint published as [arXiv:2508.00836](https://arxiv.org/abs/2508.00836). This preprint both explains what rxiv-maker is and serves as an extensive demonstration of how scientific preprints can be written using [rxiv-maker](https://github.com/HenriquesLab/rxiv-maker), a framework for writing scientific manuscripts in Markdown with automated figure generation.
 
 ## 📚 What's Inside
 
-This manuscript showcases:
+This preprint demonstrates rxiv-maker's capabilities while documenting the framework itself:
 
-- **Markdown-based writing**: Clean, readable scientific content in `01_MAIN.md`
-- **Automated figure generation**: Python scripts in `FIGURES/` that generate publication-ready plots
-- **Supplementary information**: Additional content in `02_SUPPLEMENTARY_INFO.md`
-- **Configuration**: Manuscript settings in `00_CONFIG.yml`
-- **Data processing**: Python modules in `src/py/` for data analysis
-- **Citations and references**: BibTeX integration for academic citations
+- **Self-documenting preprint**: The content in `01_MAIN.md` explains rxiv-maker while being written with it
+- **Live data integration**: Python scripts that pull current arXiv statistics and inject them into the text
+- **Automated figure generation**: Python scripts in `FIGURES/` that generate publication-ready plots from real data
+- **Supplementary information**: Additional technical details in `02_SUPPLEMENTARY_INFO.md`
+- **Complete workflow**: Configuration in `00_CONFIG.yml`, data processing modules in `src/py/`, and BibTeX references
+- **Reproducible science**: Every figure and statistic is generated from source data and code
 
 ## 🚀 Getting Started
 
@@ -24,7 +24,7 @@ This manuscript showcases:
 
 2. Ensure you have a LaTeX distribution installed (see [rxiv-maker installation guide](https://github.com/HenriquesLab/rxiv-maker#installation))
 
-### Building the Manuscript
+### Building the Preprint
 
 ```bash
 # Clone this repository
@@ -36,9 +36,10 @@ rxiv pdf MANUSCRIPT/
 ```
 
 This will:
-1. Execute all Python figure generation scripts
-2. Process the Markdown content
-3. Generate a publication-ready PDF in `MANUSCRIPT/output/`
+1. Execute all Python scripts to fetch current arXiv data and generate statistics
+2. Create all figures from source data and scripts
+3. Process the Markdown content with embedded dynamic values
+4. Generate the complete preprint PDF in `MANUSCRIPT/output/`
 
 ### Other Commands
 
@@ -46,7 +47,7 @@ This will:
 # Generate figures only
 rxiv figures MANUSCRIPT/
 
-# Validate manuscript structure
+# Validate preprint structure
 rxiv validate MANUSCRIPT/
 
 # Clean generated files
@@ -57,36 +58,62 @@ rxiv clean MANUSCRIPT/
 
 ```
 MANUSCRIPT/
-├── 00_CONFIG.yml              # Manuscript configuration
-├── 01_MAIN.md                 # Main manuscript content
+├── 00_CONFIG.yml              # Preprint configuration and metadata
+├── 01_MAIN.md                 # Main preprint content
 ├── 02_SUPPLEMENTARY_INFO.md   # Supplementary information
 ├── FIGURES/                   # Figure generation scripts
-│   ├── Figure__*.py          # Main figure scripts
-│   └── SFigure__*.py         # Supplementary figure scripts
-├── DATA/                     # Data files
-├── src/                      # Source code and utilities
-│   └── py/                   # Python modules
-└── output/                   # Generated files (created during build)
+│   ├── Figure__*.py          # Main figure scripts (system diagrams, workflows)
+│   └── SFigure__*.py         # Supplementary figure scripts (arXiv data visualizations)
+├── DATA/                     # Live data files (arXiv statistics, etc.)
+├── src/                      # Source code and utilities for the preprint
+│   └── py/                   # Python modules for data processing and analysis
+└── output/                   # Generated preprint PDF and LaTeX files
 ```
 
-## 🎨 Figure Generation
+## 🎨 Live Figure Generation
 
-The manuscript includes several example figures that demonstrate:
+The preprint includes figures that are generated from real, current data:
 
-- **Data visualization**: Plots using matplotlib and seaborn
-- **Statistical analysis**: Data processing and visualization
-- **Dynamic content**: Figures that update based on current data
-- **Publication quality**: High-resolution outputs suitable for journals
+- **ArXiv growth analysis**: Live plots of preprint submission trends using current arXiv statistics
+- **System diagrams**: Technical illustrations of the rxiv-maker architecture and workflow
+- **Data visualization**: Professional plots using matplotlib and seaborn with real scientific data
+- **Self-updating content**: Figures and statistics that refresh with the latest data when rebuilt
+- **Publication quality**: High-resolution outputs ready for academic publication
 
-## 🔗 Learn More
+## 🔗 Rxiv-Maker Ecosystem
 
-- **Main Project**: [rxiv-maker on GitHub](https://github.com/HenriquesLab/rxiv-maker)
-- **Documentation**: [Rxiv-Maker Guide](https://github.com/HenriquesLab/rxiv-maker#documentation)
-- **Paper**: [arXiv:2508.00836](https://arxiv.org/abs/2508.00836)
+### Core Components
+- **🛠️ Main Framework**: [rxiv-maker](https://github.com/HenriquesLab/rxiv-maker) - The core tool for converting Markdown to publication-ready PDFs
+- **🐳 Docker Support**: [docker-rxiv-maker](https://github.com/HenriquesLab/docker-rxiv-maker) - Containerized execution with pre-configured environment
+- **💻 VS Code Extension**: [vscode-rxiv-maker](https://github.com/HenriquesLab/vscode-rxiv-maker) - IDE integration with syntax highlighting and validation
+- **🌐 Official Website**: [rxiv-maker.henriqueslab.org](https://rxiv-maker.henriqueslab.org) - Documentation, guides, and tutorials
+- **📄 This Repository**: Contains the official preprint (arXiv:2508.00836) and comprehensive usage example
+
+### Documentation & Resources
+- **Getting Started**: [Installation Guide](https://rxiv-maker.henriqueslab.org/getting-started/installation/)
+- **First Manuscript**: [Tutorial](https://rxiv-maker.henriqueslab.org/getting-started/first-manuscript/)
+- **User Guides**: [Complete Documentation](https://rxiv-maker.henriqueslab.org/guides/)
+- **Google Colab**: [Try Online](https://colab.research.google.com/github/HenriquesLab/rxiv-maker/blob/main/notebooks/rxiv_maker_colab.ipynb)
+- **GitHub Actions**: [CI/CD Guide](https://github.com/HenriquesLab/rxiv-maker/blob/main/docs/github-actions-guide.md)
+
+## 📖 Citation
+
+If you use rxiv-maker or reference this preprint, please cite:
+
+```bibtex
+@misc{saraiva_2025_rxivmaker,
+  title={Rxiv-Maker: an automated template engine for streamlined scientific publications},
+  author={Bruno M. Saraiva and António D. Brito and Guillaume Jaquemet and Ricardo Henriques},
+  year={2025},
+  eprint={2508.00836},
+  archivePrefix={arXiv},
+  url={https://arxiv.org/abs/2508.00836}
+}
+```
 
 ## 📄 License
 
-This example manuscript is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE).
+This preprint is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE).
 
 You are free to:
 - **Share** — copy and redistribute the material in any medium or format
@@ -94,8 +121,8 @@ You are free to:
 
 ## 🤝 Contributing
 
-Found an issue or want to improve the example? Please open an issue or pull request on the [main rxiv-maker repository](https://github.com/HenriquesLab/rxiv-maker/issues).
+Found an issue or want to improve this preprint? Please open an issue or pull request on the [main rxiv-maker repository](https://github.com/HenriquesLab/rxiv-maker/issues).
 
 ---
 
-**Note**: This is an example manuscript designed to showcase rxiv-maker's features. The content serves as a demonstration and template for creating your own scientific manuscripts.
+**Note**: This repository contains the official rxiv-maker preprint (arXiv:2508.00836) which both documents the framework and serves as a comprehensive example of scientific writing with rxiv-maker. The source code demonstrates reproducible manuscript preparation with live data integration.

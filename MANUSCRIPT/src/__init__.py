@@ -1,1 +1,1 @@
-"""Source modules for the EXAMPLE_MANUSCRIPT."""
+"""Source modules for the Rxiv-Maker preprint."""
