@@ -5,9 +5,14 @@
 output/
 **/output/
 
-# Generated PDFs (except final named PDFs)
-MANUSCRIPT.pdf
-manuscript.pdf
+# Generated PDFs - all generated content should be ignored
+*.pdf
+!FIGURES/*.png
+!FIGURES/*.jpg
+!FIGURES/*.jpeg
+!FIGURES/*.svg
+
+# LaTeX intermediate files
 *.aux
 *.bbl
 *.blg
@@ -17,6 +22,12 @@ manuscript.pdf
 *.fdb_latexmk
 *.fls
 *.synctex.gz
+
+# Test and temporary directories
+final_underline_test/
+test_underline_update/
+*_test/
+*_temp/
 
 # LaTeX intermediate files
 *.nav
