@@ -1,0 +1,205 @@
+\begin{thebibliography}{27}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Beck et~al.(2020)Beck, Ferguson, Funk, Hanson, Harrison, Ide-Smith,
+  Lammey, Levchenko, Mendonca, Parkin, Penfold, Pfeiffer, Polka, Puebla,
+  Rieger, Rittman, Sever, and Swaminathan]{beck2020}
+Jeffrey Beck, Christine~A Ferguson, Kathryn Funk, Brooks Hanson, Melissa
+  Harrison, Michele Ide-Smith, Rachael Lammey, Maria Levchenko, Alex Mendonca,
+  Michael Parkin, Naomi Penfold, Nicole Pfeiffer, Jessica Polka, Iratxe Puebla,
+  Oya~Y Rieger, Martyn Rittman, Richard Sever, and Sowmya Swaminathan.
+\newblock Building trust in preprints: recommendations for servers and other
+  stakeholders, 2020.
+
+\bibitem[Levchenko et~al.(2024)Levchenko, Parkin, McEntyre, and
+  Harrison]{levchenk2024}
+Mariia Levchenko, Michael Parkin, Johanna McEntyre, and Melissa Harrison.
+\newblock Enabling preprint discovery, evaluation, and analysis with europe
+  pmc, 2024.
+
+\bibitem[Fraser et~al.(2020)Fraser, Momeni, Mayr, and
+  Peters]{Fraser2020_preprint_growth}
+Nicholas Fraser, Fakhri Momeni, Philipp Mayr, and Isabella Peters.
+\newblock The relationship between biorxiv preprints, citations and altmetrics.
+\newblock \emph{Quantitative Science Studies}, 1\penalty0 (2):\penalty0
+  618--638, 2020.
+\newblock \doi{10.1162/qss_a_00043}.
+
+\bibitem[Vale(2015)]{Vale2015_preprints}
+Ronald~D Vale.
+\newblock Accelerating scientific publication in biology.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 112\penalty0
+  (44):\penalty0 13439--13446, 2015.
+\newblock \doi{10.1073/pnas.1511912112}.
+
+\bibitem[Tenant et~al.(2016)Tenant, Waldner, Jacques, Masuzzo, Collister, and
+  Hartgerink]{Tenant2016_academic_publishing}
+Jonathan~P Tenant, Francois Waldner, Damien~C Jacques, Paola Masuzzo, Lauren~B
+  Collister, and Chris~HJ Hartgerink.
+\newblock The academic, economic and societal impacts of open access: an
+  evidence-based review.
+\newblock \emph{F1000Research}, 5:\penalty0 632, 2016.
+\newblock \doi{10.12688/f1000research.8460.3}.
+
+\bibitem[Lin et~al.(2020)Lin, Yu, Zhou, Zhou, and Shi]{lin2020}
+Jialiang Lin, Yao Yu, Yu~Zhou, Zhiyang Zhou, and Xiaodong Shi.
+\newblock How many preprints have actually been printed and why: a case study
+  of computer science preprints on arxiv.
+\newblock \emph{Scientometrics}, 124\penalty0 (1):\penalty0 555--574, 2020.
+\newblock \doi{10.1007/s11192-020-03430-8}.
+
+\bibitem[Perkel(2022)]{perkel2022}
+Jeffrey~M. Perkel.
+\newblock Cut the tyranny of copy-and-paste with these coding tools.
+\newblock \emph{Nature}, 603\penalty0 (7899):\penalty0 191--192, 2022.
+\newblock \doi{10.1038/d41586-022-00563-z}.
+
+\bibitem[Rubens et~al.(2020)Rubens, Mormont, Paavolainen, B\"{a}cker, Pavie,
+  et~al.]{biaflows2024}
+Ulysse Rubens, Romain Mormont, Lassi Paavolainen, Volker B\"{a}cker, Benjamin
+  Pavie, et~al.
+\newblock Biaflows: A collaborative framework to reproducibly deploy and
+  benchmark bioimage analysis workflows.
+\newblock \emph{Patterns}, 1\penalty0 (3):\penalty0 100040, 2020.
+\newblock \doi{10.1016/j.patter.2020.100040}.
+
+\bibitem[Hidalgo-Cenalmor et~al.(2024)Hidalgo-Cenalmor, Pylv\"{a}n\"{a}inen,
+  Ferreira, et~al.]{dl4miceverywhere2024}
+Ivan Hidalgo-Cenalmor, Joanna~W Pylv\"{a}n\"{a}inen, Mariana~G Ferreira, et~al.
+\newblock Dl4miceverywhere: deep learning for microscopy made flexible,
+  shareable and reproducible.
+\newblock \emph{Nature Methods}, 21\penalty0 (9):\penalty0 1645--1656, 2024.
+\newblock \doi{10.1038/s41592-024-02295-6}.
+
+\bibitem[Ram(2013)]{Ram2013_git_science}
+Karthik Ram.
+\newblock Git can facilitate greater reproducibility and increased transparency
+  in science.
+\newblock \emph{Source Code for Biology and Medicine}, 8\penalty0 (1):\penalty0
+  7, 2013.
+\newblock \doi{10.1186/1751-0473-8-7}.
+
+\bibitem[Perez-Riverol et~al.(2016)Perez-Riverol, Gatto, Wang, Sachsenberg,
+  Uszkoreit, Leprevost, Fufezan, Ternent, Eglen, Katz,
+  et~al.]{Perez-Riverol2016_github_bioinformatics}
+Yasset Perez-Riverol, Laurent Gatto, Rui Wang, Timo Sachsenberg, Julian
+  Uszkoreit, Felipe da~Veiga Leprevost, Christian Fufezan, Tobias Ternent,
+  Stephen~J Eglen, Daniel~S Katz, et~al.
+\newblock Ten simple rules for taking advantage of git and github.
+\newblock \emph{PLoS Computational Biology}, 12\penalty0 (7):\penalty0
+  e1004947, 2016.
+\newblock \doi{10.1371/journal.pcbi.1004947}.
+
+\bibitem[{Overleaf}(2024)]{Overleaf2024}
+{Overleaf}.
+\newblock Overleaf: Real-time collaborative writing and publishing tools with
+  integrated pdf preview, 2024.
+\newblock Cloud-based LaTeX editor.
+
+\bibitem[{Ricardo Henriques}(2015)]{HenriquesLab2015_template}
+{Ricardo Henriques}.
+\newblock Henriques biorxiv template, 2015.
+\newblock Overleaf LaTeX template. Accessed: 2025-06-16.
+
+\bibitem[Himmelstein et~al.(2019)Himmelstein, Rubinetti, Slochower, Hu,
+  Malladi, Greene, and Gitter]{himmelstein2019}
+Daniel~S. Himmelstein, Vincent Rubinetti, David~R. Slochower, Dongbo Hu,
+  Venkat~S. Malladi, Casey~S. Greene, and Anthony Gitter.
+\newblock Open collaborative writing with manubot.
+\newblock \emph{PLOS Computational Biology}, 15\penalty0 (6):\penalty0
+  e1007128, 2019.
+\newblock \doi{10.1371/journal.pcbi.1007128}.
+
+\bibitem[{The Executable Book Community}(2020)]{JupyterBook2020}
+{The Executable Book Community}.
+\newblock Jupyter book: Build beautiful, publication-quality books and
+  documents from computational material, 2020.
+\newblock Accessed: 2025-09-24.
+
+\bibitem[{Posit PBC}(2024)]{Quarto2024}
+{Posit PBC}.
+\newblock Quarto: An open-source scientific and technical publishing system,
+  2024.
+\newblock Multi-language scientific publishing system.
+
+\bibitem[Kluyver et~al.(2016)Kluyver, Ragan-Kelley, P{\'e}rez, Granger,
+  Bussonnier, Frederic, Kelley, Hamrick, Grout, Corlay,
+  et~al.]{Jupyter2016_notebook}
+Thomas Kluyver, Benjamin Ragan-Kelley, Fernando P{\'e}rez, Brian~E Granger,
+  Matthias Bussonnier, Jonathan Frederic, Kyle Kelley, Jessica~B Hamrick, Jason
+  Grout, Sylvain Corlay, et~al.
+\newblock Jupyter notebooks--a publishing format for reproducible computational
+  workflows.
+\newblock In \emph{Positioning and Power in Academic Publishing: Players,
+  Agents and Agendas}, pages 87--90. IOS Press, 2016.
+\newblock \doi{10.3233/978-1-61499-649-1-87}.
+
+\bibitem[{Typst GmbH}(2024)]{Typst2024}
+{Typst GmbH}.
+\newblock Typst: A new markup-based typesetting system, 2024.
+\newblock Modern typesetting system designed for scientific documents.
+
+\bibitem[Xie(2016)]{Xie2016_bookdown}
+Yihui Xie.
+\newblock \emph{bookdown: Authoring Books and Technical Documents with R
+  Markdown}.
+\newblock Chapman and Hall/CRC, 2016.
+\newblock ISBN 9781138700109.
+
+\bibitem[pan(2020)]{pandoc2020}
+Pandoc: The universal markup converter, 2020.
+\newblock Accessed: 2025-06-16.
+
+\bibitem[Boettiger(2015)]{Boettiger2015_docker_reproducibility}
+Carl Boettiger.
+\newblock An introduction to docker for reproducible research.
+\newblock \emph{ACM SIGOPS Operating Systems Review}, 49\penalty0 (1):\penalty0
+  71--79, 2015.
+\newblock \doi{10.1145/2723872.2723882}.
+
+\bibitem[Gomes et~al.(2018)Gomes, Bagnaschi, Campos, David, Alves, Martins,
+  Pina, L\'{o}pez-Garc\'{\i}a, and Orviz]{gomes2018}
+Jorge Gomes, Emanuele Bagnaschi, Isabel Campos, Mario David, Lu\'{\i}s Alves,
+  Jo\~{a}o Martins, Jo\~{a}o Pina, Alvaro L\'{o}pez-Garc\'{\i}a, and Pablo
+  Orviz.
+\newblock Enabling rootless linux containers in multi-user environments: The
+  udocker tool.
+\newblock \emph{Computer Physics Communications}, 232:\penalty0 84--97, 2018.
+\newblock \doi{10.1016/j.cpc.2018.05.021}.
+
+\bibitem[Knuth(1984)]{Knuth1984_literate_programming}
+Donald~E Knuth.
+\newblock Literate programming.
+\newblock \emph{The Computer Journal}, 27\penalty0 (2):\penalty0 97--111, 1984.
+\newblock \doi{10.1093/comjnl/27.2.97}.
+
+\bibitem[Hunter(2007)]{Hunter2007_matplotlib}
+John~D Hunter.
+\newblock Matplotlib: A 2d graphics environment.
+\newblock \emph{Computing in Science \& Engineering}, 9\penalty0 (3):\penalty0
+  90--95, 2007.
+\newblock \doi{10.1109/MCSE.2007.55}.
+
+\bibitem[Waskom(2021)]{Waskom2021_seaborn}
+Michael~L Waskom.
+\newblock seaborn: statistical data visualization.
+\newblock \emph{Journal of Open Source Software}, 6\penalty0 (60):\penalty0
+  3021, 2021.
+\newblock \doi{10.21105/joss.03021}.
+
+\bibitem[{Mermaid Team}(2023)]{Mermaid2023_documentation}
+{Mermaid Team}.
+\newblock Mermaid: Generation of diagrams and flowcharts from text in a similar
+  manner as markdown, 2023.
+\newblock Accessed: 2024-12-01.
+
+\bibitem[{Sperr, Ed}(2025)]{PubMedByYear2025}
+{Sperr, Ed}.
+\newblock Pubmed by year: A dataset of pubmed publication counts by year, 2025.
+\newblock Accessed: 2025-07-01.
+
+\end{thebibliography}
