@@ -80,6 +80,44 @@ The preprint includes figures that are generated from real, current data:
 - **Self-updating content**: Figures and statistics that refresh with the latest data when rebuilt
 - **Publication quality**: High-resolution outputs ready for academic publication
 
+## 📚 Citation Features (v1.13.0+)
+
+This manuscript demonstrates rxiv-maker's flexible citation management:
+
+### Multiple Citation Styles
+Switch between numbered `[1, 2]` and author-date `(Smith, 2024)` formats:
+```yaml
+# In 00_CONFIG.yml
+citation_style: "numbered"      # [1, 2, 3] (default)
+citation_style: "author-date"   # (Smith, 2024; Jones, 2023)
+```
+
+### Inline DOI Resolution
+Paste DOIs directly in markdown - rxiv-maker automatically:
+- Fetches metadata from CrossRef/DataCite
+- Generates BibTeX entries
+- Replaces DOIs with citation keys
+
+```yaml
+# In 00_CONFIG.yml
+enable_inline_doi_resolution: true
+```
+
+**Example workflow:**
+```markdown
+Recent advances 10.1038/nature12373 enable new techniques.
+```
+Auto-converts to:
+```markdown
+Recent advances @smith2024 enable new techniques.
+```
+
+With complete BibTeX entry generated automatically!
+
+### Learn More
+- **[10-Minute Tutorial](https://rxiv-maker.henriqueslab.org/getting-started/citations-tutorial/)** - Hands-on practice
+- **[Complete Guide](https://rxiv-maker.henriqueslab.org/guides/citations-and-references/)** - Comprehensive reference
+
 ## 🔗 Rxiv-Maker Ecosystem
 
 ### Core Components

@@ -10,6 +10,18 @@ license: "CC BY 4.0"
 acknowledge_rxiv_maker: false
 enable_doi_validation: true            # Enable DOI validation against CrossRef/DataCite APIs
 
+# Citation and bibliography configuration (v1.13.0+)
+# Citation style: "numbered" for [1,2] or "author-date" for (Smith, 2024)
+# See: https://henriqueslab.github.io/rxiv-maker/guides/citations-and-references/
+citation_style: "numbered"
+
+# Enable inline DOI resolution: Paste DOIs directly in markdown,
+# they'll be auto-converted to BibTeX entries and citation keys
+# Example: "Recent work 10.1234/example" → "Recent work @smith2024"
+# Warning: Modifies markdown files in-place - commit your work first!
+# See tutorial: https://henriqueslab.github.io/rxiv-maker/getting-started/citations-tutorial/
+enable_inline_doi_resolution: false
+
 keywords:
   - "article template"
   - "scientific publishing"
@@ -71,3 +83,6 @@ affiliations:
     location: "Turku, Finland"
 
 bibliography: 03_REFERENCES.bib
+
+# Methods section placement
+methods_placement: "after_bibliography"  # Options: "inline" (or 1), "after_results" (or 2), "after_bibliography" (or 3)
