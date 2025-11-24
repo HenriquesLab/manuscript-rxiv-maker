@@ -1,5 +1,11 @@
 # Rxiv-Maker: Official Preprint & Comprehensive Example
 
+> 📚 **Dual Purpose Repository**: This repository serves two important roles:
+> 1. **Official Published Preprint** - The rxiv-maker paper published as [arXiv:2508.00836](https://arxiv.org/abs/2508.00836)
+> 2. **Comprehensive Working Example** - A complete demonstration of all rxiv-maker features
+>
+> Clone it instantly with: `rxiv get-rxiv-preprint`
+
 This repository contains the official rxiv-maker preprint published as [arXiv:2508.00836](https://arxiv.org/abs/2508.00836). This preprint both explains what rxiv-maker is and serves as an extensive demonstration of how scientific preprints can be written using [rxiv-maker](https://github.com/HenriquesLab/rxiv-maker), a framework for writing scientific manuscripts in Markdown with automated figure generation.
 
 ## 📚 What's Inside
@@ -80,7 +86,7 @@ The preprint includes figures that are generated from real, current data:
 - **Self-updating content**: Figures and statistics that refresh with the latest data when rebuilt
 - **Publication quality**: High-resolution outputs ready for academic publication
 
-## 📚 Citation Features (v1.13.0+)
+## 📚 Citation Features
 
 This manuscript demonstrates rxiv-maker's flexible citation management:
 

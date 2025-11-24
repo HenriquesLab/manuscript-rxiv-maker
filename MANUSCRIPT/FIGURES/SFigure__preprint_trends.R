@@ -89,7 +89,7 @@ create_figure <- function(df) {
   colors <- c("#1f77b4", "#ff7f0e", "#2ca02c", "#d62728")
 
   p <- ggplot(df, aes(x = date, y = submissions, color = source, fill = source)) +
-    geom_line(linewidth = 1.2, alpha = 0.9) +
+    geom_line(size = 1.2, alpha = 0.9) +
     geom_area(alpha = 0.15, position = "identity") +
     labs(
       title = "Pubmed Listed Preprints",
@@ -112,8 +112,8 @@ create_figure <- function(df) {
     theme(
       axis.title = element_text(face = "bold", color = "#333333"),
       plot.title = element_text(face = "bold", size = 11, hjust = 0.5, color = "#333333"),
-      panel.grid.minor = element_line(linewidth = 0.25, color = "#E0E0E0"),
-      panel.grid.major = element_line(linewidth = 0.4, color = "#D0D0D0"),
+      panel.grid.minor = element_line(size = 0.25, color = "#E0E0E0"),
+      panel.grid.major = element_line(size = 0.4, color = "#D0D0D0"),
       axis.text.x = element_text(angle = 45, hjust = 1, color = "#333333"),
       axis.text.y = element_text(color = "#333333"),
       legend.position = "bottom",

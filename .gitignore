@@ -153,3 +153,4 @@ MANUSCRIPT/**/*.out
 **/__pycache__/
 .gemini/
 gha-creds-*.json
+**/.DS_Store
