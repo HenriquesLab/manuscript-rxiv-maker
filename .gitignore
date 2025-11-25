@@ -5,8 +5,9 @@
 output/
 **/output/
 
-# Generated PDFs - all generated content should be ignored
+# Generated PDFs - ignore manuscript PDFs but keep figure PDFs
 *.pdf
+!MANUSCRIPT/FIGURES/*.pdf
 !FIGURES/*.png
 !FIGURES/*.jpg
 !FIGURES/*.jpeg
@@ -139,9 +140,10 @@ temp/
 !MANUSCRIPT/
 !MANUSCRIPT/**
 
-# But ignore any output in MANUSCRIPT
+# But ignore any output in MANUSCRIPT (except figure PDFs in FIGURES/)
 MANUSCRIPT/output/
 MANUSCRIPT/**/*.pdf
+!MANUSCRIPT/FIGURES/*.pdf
 MANUSCRIPT/**/*.aux
 MANUSCRIPT/**/*.bbl
 MANUSCRIPT/**/*.blg
