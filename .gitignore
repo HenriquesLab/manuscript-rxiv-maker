@@ -150,6 +150,7 @@ MANUSCRIPT/**/*.bbl
 MANUSCRIPT/**/*.blg
 MANUSCRIPT/**/*.log
 MANUSCRIPT/**/*.out
+MANUSCRIPT/**/*.docx
 
 
 **/.rxiv_cache/

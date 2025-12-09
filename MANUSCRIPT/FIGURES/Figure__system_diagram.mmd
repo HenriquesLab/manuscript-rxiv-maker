@@ -16,6 +16,7 @@ flowchart TD
     G["<i class='fas fa-image fa-2x'></i><br/><b>FIGURES</b><br/>Graphics"]
 
     H["<i class='fas fa-file-pdf fa-2x'></i><br/><b>PUBLICATION-READY</b><br/>SCIENTIFIC PDF"]
+    J["<i class='fas fa-file-word fa-2x'></i><br/><b>COLLABORATIVE</b><br/>DOCX EXPORT"]
 
     A ==> E
     B ==> E
@@ -26,6 +27,9 @@ flowchart TD
     E ==> G
     F ==> H
     G ==> H
+    G ==> J
+    E ==> J
+    class J final
 
     classDef input fill:#1f2937,stroke:#374151,stroke-width:4px,color:#ffffff,font-weight:bold,font-size:16px
     classDef engine fill:#dc2626,stroke:#991b1b,stroke-width:5px,color:#ffffff,font-weight:bold,font-size:18px
@@ -35,4 +39,4 @@ flowchart TD
     class A,B,C,D,I input
     class E engine
     class F,G output
-    class H final
+    class H,J final
