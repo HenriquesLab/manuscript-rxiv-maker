@@ -12,42 +12,44 @@ config:
   layout: dagre
 ---
 flowchart TD
- subgraph INPUT["📝 Input Layer"]
+ subgraph INPUT["fa:fa-file-import Input Layer"]
     direction LR
-        A1["📄 Manuscript<br>Markdown Files"]
-        A2["📚 References<br>BibTeX File"]
-        A3["🎨 Figure Sources<br>Scripts &amp; Images"]
+        A1["fa:fa-file-alt Manuscript<br>Markdown Files"]
+        A2["fa:fa-book References<br>BibTeX File"]
+        A3["fa:fa-image Figure Sources<br>Scripts &amp; Images"]
   end
- subgraph PARSE["Parse & Convert"]
+ subgraph PARSE["fa:fa-code Parse & Convert"]
     direction LR
-        B1["📝 Markdown<br>to LaTeX"]
-        B2["🎯 Process<br>Content"]
+        B1["fa:fa-exchange-alt Markdown<br>to LaTeX"]
+        B2["fa:fa-cog Process<br>Content"]
   end
- subgraph GEN["Generate & Assemble"]
+ subgraph GEN["fa:fa-magic Generate & Assemble"]
     direction LR
-        C1["🎨 Execute<br>Scripts"]
-        C2["📐 Build<br>Document"]
+        C1["fa:fa-terminal Execute<br>Scripts"]
+        C2["fa:fa-layer-group Build<br>Document"]
   end
- subgraph PROCESS["🔄 Processing Engine"]
+ subgraph PROCESS["fa:fa-microchip Processing Engine"]
     direction TB
         PARSE
         GEN
   end
- subgraph COMPILE["⚙️ LaTeX Compilation"]
+ subgraph COMPILE["fa:fa-cogs Compilation"]
     direction LR
-        D1["🔧 pdflatex"]
-        D2["📖 BibTeX"]
+        D1["fa:fa-wrench pdflatex"]
+        D2["fa:fa-book BibTeX"]
+        D3["fa:fa-file-word Word<br>Engine"]
   end
- subgraph OUTPUT["📄 Output Layer"]
+ subgraph OUTPUT["fa:fa-file-export Output Layer"]
     direction LR
-        E1["📄 Publication<br>PDF"]
-        E2["📝 LaTeX<br>Source"]
+        E1["fa:fa-file-pdf Publication<br>PDF"]
+        E2["fa:fa-file-code LaTeX<br>Source"]
+        E3["fa:fa-file-word Word<br>Document"]
   end
- subgraph FEATURES["✨ Key Features"]
+ subgraph FEATURES["fa:fa-star Key Features"]
     direction TB
-        F1["🚀 Local-First<br>Execution"]
-        F2["📊 Intelligent<br>Caching"]
-        F3["✅ Automated<br>Validation"]
+        F1["fa:fa-laptop Local-First<br>Execution"]
+        F2["fa:fa-chart-bar Intelligent<br>Caching"]
+        F3["fa:fa-check-circle Automated<br>Validation"]
   end
     INPUT --> PROCESS
     PROCESS --> COMPILE
@@ -58,9 +60,10 @@ flowchart TD
     B1 --> B2
     B2 --> C2
     C1 --> C2
-    C2 --> D1
+    C2 --> D1 & D3
     D1 --> D2 & E2
     D2 --> E1
+    D3 --> E3
     FEATURES -.-> PROCESS
     F2 -.-> C1
     F3 -.-> COMPILE
