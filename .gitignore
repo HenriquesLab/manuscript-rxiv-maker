@@ -7,6 +7,7 @@ output/
 
 # Generated PDFs - ignore manuscript PDFs but keep figure PDFs
 *.pdf
+*.docx
 !MANUSCRIPT/FIGURES/*.pdf
 !FIGURES/*.png
 !FIGURES/*.jpg
