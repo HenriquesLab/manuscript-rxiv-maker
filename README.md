@@ -24,11 +24,10 @@ This preprint demonstrates rxiv-maker's capabilities while documenting the frame
 ### Prerequisites
 
 1. Install [rxiv-maker](https://github.com/HenriquesLab/rxiv-maker):
-   ```bash
-   pipx install rxiv-maker
-   ```
+   
+   See the [Official Installation Guide](https://github.com/HenriquesLab/rxiv-maker#installation) for your platform (macOS, Linux, Windows).
 
-2. Ensure you have a LaTeX distribution installed (see [rxiv-maker installation guide](https://github.com/HenriquesLab/rxiv-maker#installation))
+2. Ensure you have a LaTeX distribution installed (the installation guide covers this).
 
 ### Building the Preprint
 
