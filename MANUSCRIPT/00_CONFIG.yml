@@ -15,6 +15,10 @@ enable_doi_validation: true            # Enable DOI validation against CrossRef/
 # See: https://henriqueslab.github.io/rxiv-maker/guides/citations-and-references/
 citation_style: "numbered"
 
+# Bibliography author name format (v1.14.0+)
+# Options: "lastname_initials" (Smith, J.A.), "lastname_firstname" (Smith, John A.), "firstname_lastname" (John A. Smith)
+bibliography_author_format: "lastname_initials"
+
 # Enable inline DOI resolution: Paste DOIs directly in markdown,
 # they'll be auto-converted to BibTeX entries and citation keys
 # Example: "Recent work 10.1234/example" → "Recent work @smith2024"
