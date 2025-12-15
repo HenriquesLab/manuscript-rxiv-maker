@@ -37,7 +37,7 @@ Next, you can edit the `01_MAIN.md` file to add your text. You can use standard 
 
 To build the PDF, navigate into the project directory (`cd my_new_paper`) and run the command `rxiv pdf`. The framework will process your files, execute any embedded code, and generate a professionally typeset PDF in the `output` directory. If you encounter any issues, running `rxiv validate` provides a detailed check of your manuscript's integrity, flagging common problems like missing figures or broken citations.
 
-This straightforward process allows you to get from a blank slate to a compiled PDF in minutes, providing a solid foundation that you can then build upon with more advanced features like programmatic figures and tables.
+This straightforward process allows you to get from a blank slate to a compiled PDF, providing a solid foundation that you can then build upon with more advanced features like programmatic figures and tables.
 
 {#snote:markdown-syntax} **Rxiv-Maker Markdown Syntax and Advanced LaTeX Integration**
 
@@ -148,7 +148,7 @@ Complementing this is a powerful validation framework that acts as a quality-con
 
 ## Supplementary Figures
 
-![ArXiv Growth Chart](FIGURES/SFigure__arxiv_growth.pdf)
+![arXiv Growth Chart](FIGURES/SFigure__arxiv_growth.pdf)
 {#sfig:arxiv_growth width="70%" tex_position="p"} **The growth of preprint submissions on the arXiv server (1991-2025).** This figure was generated from public arXiv statistics using a Python script executed by the Rxiv-Maker pipeline, demonstrating reproducible, data-driven visualisation.
 
 ![Preprint Trends Chart](FIGURES/SFigure__preprint_trends.pdf)

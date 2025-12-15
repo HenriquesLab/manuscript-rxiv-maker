@@ -8,16 +8,67 @@
 
 This repository contains the official rxiv-maker preprint published as [arXiv:2508.00836](https://arxiv.org/abs/2508.00836). This preprint both explains what rxiv-maker is and serves as an extensive demonstration of how scientific preprints can be written using [rxiv-maker](https://github.com/HenriquesLab/rxiv-maker), a framework for writing scientific manuscripts in Markdown with automated figure generation.
 
+## 📑 Quick Navigation
+
+- [What's Inside](#-whats-inside) - Demonstrations and features
+- [Getting Started](#-getting-started) - Prerequisites and building
+- [Repository Structure](#-repository-structure) - File organization
+- [Live Figure Generation](#-live-figure-generation) - Dynamic data features
+- [Citation Features](#-citation-features) - Citation styles and DOI resolution
+- [Ecosystem](#-rxiv-maker-ecosystem) - Related repositories
+- [Citation](#-citation) - How to cite
+
+<details>
+<summary><b>🔍 Learning Paths</b> (click to expand)</summary>
+
+**New to rxiv-maker?**
+1. Start with [rxiv-maker Installation](https://github.com/HenriquesLab/rxiv-maker#installation)
+2. Read the [Getting Started Guide](https://rxiv-maker.henriqueslab.org/getting-started/first-manuscript/)
+3. Clone this repository: `rxiv get-rxiv-preprint`
+4. Build the PDF: `rxiv pdf MANUSCRIPT/`
+5. Explore the source files to see how features work
+
+**Want to learn specific features?**
+- **Figures**: Check `MANUSCRIPT/FIGURES/` for Python/R examples
+- **Citations**: See `01_MAIN.md` for citation syntax examples
+- **Data Integration**: Look at `{{py:exec}}` blocks in `01_MAIN.md`
+- **Configuration**: Study `00_CONFIG.yml` for metadata setup
+
+</details>
+
 ## 📚 What's Inside
 
 This preprint demonstrates rxiv-maker's capabilities while documenting the framework itself:
 
-- **Self-documenting preprint**: The content in `01_MAIN.md` explains rxiv-maker while being written with it
-- **Live data integration**: Python scripts that pull current arXiv statistics and inject them into the text
-- **Automated figure generation**: Python scripts in `FIGURES/` that generate publication-ready plots from real data
-- **Supplementary information**: Additional technical details in `02_SUPPLEMENTARY_INFO.md`
-- **Complete workflow**: Configuration in `00_CONFIG.yml`, data processing modules in `src/py/`, and BibTeX references
-- **Reproducible science**: Every figure and statistic is generated from source data and code
+| Feature | Location | Example |
+|---------|----------|---------|
+| **Self-documenting preprint** | `01_MAIN.md` | Explains rxiv-maker while using it |
+| **Live data integration** | `{{py:exec}}` blocks | Current arXiv statistics |
+| **Automated figures** | `FIGURES/*.py` | Publication-ready plots from data |
+| **Supplementary info** | `02_SUPPLEMENTARY_INFO.md` | Additional technical details |
+| **Configuration** | `00_CONFIG.yml` | Metadata and settings |
+| **Analysis modules** | `src/py/` | Reusable data processing code |
+| **Bibliography** | `03_REFERENCES.bib` | BibTeX references |
+
+<details>
+<summary><b>📖 Learning by Example - What Each File Teaches</b></summary>
+
+**Core Manuscript Files:**
+- `00_CONFIG.yml` - Learn: Metadata, author configuration, citation styles
+- `01_MAIN.md` - Learn: Scientific markdown, cross-references, Python integration
+- `02_SUPPLEMENTARY_INFO.md` - Learn: Supplementary content organization
+- `03_REFERENCES.bib` - Learn: BibTeX citation management
+
+**Figure Generation:**
+- `FIGURES/Figure__*.mmd` - Learn: System diagrams, workflow illustrations
+- `FIGURES/SFigure__*.py` - Learn: Data visualization, live arXiv statistics
+- `FIGURES/SFigure__*.R` - Learn: R-based statistical plots
+
+**Code Organization:**
+- `src/py/` - Learn: Reusable analysis modules
+- Python imports in markdown - Learn: How to integrate analysis code
+
+</details>
 
 ## 🚀 Getting Started
 
@@ -49,6 +100,9 @@ This will:
 ### Other Commands
 
 ```bash
+# Build the preprint PDF
+rxiv pdf MANUSCRIPT/
+
 # Generate figures only
 rxiv figures MANUSCRIPT/
 
@@ -57,7 +111,28 @@ rxiv validate MANUSCRIPT/
 
 # Clean generated files
 rxiv clean MANUSCRIPT/
+
+# Export to Word format
+rxiv docx MANUSCRIPT/
 ```
+
+<details>
+<summary><b>🎓 Educational Use - Command Explanations</b></summary>
+
+**Why these commands are useful for learning:**
+
+- `rxiv pdf` - See the complete workflow from markdown to publication PDF
+- `rxiv figures` - Understand how figure generation works independently
+- `rxiv validate` - Learn what makes a valid rxiv-maker manuscript
+- `rxiv clean` - Understand what gets generated vs. what's source
+
+**Try these learning exercises:**
+1. Run `rxiv clean` then `rxiv pdf MANUSCRIPT/` to see the full build process
+2. Modify a figure script in `FIGURES/` and run `rxiv figures MANUSCRIPT/`
+3. Change citation style in `00_CONFIG.yml` and rebuild
+4. Add a new citation to `03_REFERENCES.bib` and reference it in `01_MAIN.md`
+
+</details>
 
 ## 📁 Repository Structure
 
@@ -79,7 +154,7 @@ MANUSCRIPT/
 
 The preprint includes figures that are generated from real, current data:
 
-- **ArXiv growth analysis**: Live plots of preprint submission trends using current arXiv statistics
+- **arXiv growth analysis**: Live plots of preprint submission trends using current arXiv statistics
 - **System diagrams**: Technical illustrations of the rxiv-maker architecture and workflow
 - **Data visualization**: Professional plots using matplotlib and seaborn with real scientific data
 - **Self-updating content**: Figures and statistics that refresh with the latest data when rebuilt
@@ -120,7 +195,7 @@ Recent advances @smith2024 enable new techniques.
 With complete BibTeX entry generated automatically!
 
 ### Learn More
-- **[10-Minute Tutorial](https://rxiv-maker.henriqueslab.org/getting-started/citations-tutorial/)** - Hands-on practice
+- **[Citations Tutorial](https://rxiv-maker.henriqueslab.org/getting-started/citations-tutorial/)** - Hands-on practice
 - **[Complete Guide](https://rxiv-maker.henriqueslab.org/guides/citations-and-references/)** - Comprehensive reference
 
 ## 🔗 Rxiv-Maker Ecosystem
