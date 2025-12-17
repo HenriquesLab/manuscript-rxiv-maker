@@ -156,6 +156,3 @@ Complementing this is a powerful validation framework that acts as a quality-con
 
 ![VS Code Extension Screenshot](FIGURES/SFigure__vscode_extension.png)
 {#sfig:vscode_extension width="100%" tex_position="p"} **The Rxiv-Maker Visual Studio Code Extension.** The extension enhances the authoring experience by providing syntax highlighting for extended Markdown, autocompletion for citation keys (e.g., `@Knuth...`), and real-time validation to catch errors as you type.
-
-![Detailed Architecture Diagram](FIGURES/SFigure__architecture.pdf)
-{#sfig:architecture width="90%" tex_position="p"} **Detailed System Architecture.** A comprehensive technical diagram of the Rxiv-Maker architecture, illustrating the input layers, the processing engine's components (parsers, converters, generators), the compilation infrastructure, and the final output generation (PDF/Word). This figure highlights the modular design that enables robust and reproducible manuscript compilation.
