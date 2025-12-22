@@ -90,3 +90,8 @@ bibliography: 03_REFERENCES.bib
 
 # Methods section placement
 methods_placement: "after_bibliography"  # Options: "inline" (or 1), "after_results" (or 2), "after_bibliography" (or 3)
+
+# DOCX export configuration
+docx:
+  hide_si: false                         # Hide Supplementary Information section in DOCX export (set to true to exclude SI)
+  figures_at_end: false                  # Place main figures at end of manuscript, before SI/bibliography (common journal requirement)
