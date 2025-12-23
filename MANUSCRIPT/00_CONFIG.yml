@@ -95,3 +95,4 @@ methods_placement: "after_bibliography"  # Options: "inline" (or 1), "after_resu
 docx:
   hide_si: false                         # Hide Supplementary Information section in DOCX export (set to true to exclude SI)
   figures_at_end: false                  # Place main figures at end of manuscript, before SI/bibliography (common journal requirement)
+  hide_highlighting: false               # Keep colored highlighting of references for visual clarity (set to true for clean output)
