@@ -41,9 +41,9 @@ This straightforward process allows you to get from a blank slate to a compiled 
 
 {#snote:markdown-syntax} **Rxiv-Maker Markdown Syntax and Advanced LaTeX Integration**
 
-This comprehensive reference demonstrates the automated translation system that enables researchers to write in familiar markdown syntax whilst producing professional LaTeX output. The table below showcases both the standard Markdown-to-LaTeX translations and serves as a perfect example of Rxiv-Maker's `{{tex:...}}` blocks, which allow direct LaTeX injection for advanced formatting needs.
+This reference shows the automated translation system that lets researchers write in familiar Markdown while producing professional LaTeX output. The table below covers the standard Markdown-to-LaTeX translations and is itself an example of Rxiv-Maker's `{{tex:...}}` blocks, which allow direct LaTeX injection for advanced formatting.
 
-For complex table structures that require precise control over formatting, multi-column headers, or mathematical notation, Rxiv-Maker's `{{tex:...}}` syntax provides full access to LaTeX's typesetting capabilities. This table itself was created using `{{tex:...}}` blocks, demonstrating how raw LaTeX can be seamlessly integrated into Markdown documents while maintaining the tex block protection system that prevents markdown processing of LaTeX-specific syntax.
+For complex table structures that require precise control over formatting, multi-column headers, or mathematical notation, Rxiv-Maker's `{{tex:...}}` syntax provides full access to LaTeX's typesetting capabilities. This table itself was created using `{{tex:...}}` blocks, showing how raw LaTeX can be integrated into Markdown documents while the tex-block protection system prevents Markdown processing of LaTeX-specific syntax.
 
 {{tex:
 \small
@@ -116,21 +116,21 @@ Image with caption & \textbackslash begin\{figure\}...\textbackslash end\{figure
 <newpage> & \textbackslash newpage & Manual page break \\
 <clearpage> & \textbackslash clearpage & Page break with float clearing \\
 \hline
-\caption{\textbf{Rxiv-Maker Markdown to LaTeX Translation Reference.} Comprehensive mapping of Markdown syntax to corresponding LaTeX commands, demonstrating the automated translation system that enables researchers to write in familiar markup while producing professional typesetting.}
+\caption{\textbf{Rxiv-Maker Markdown to LaTeX Translation Reference.} Mapping of Markdown syntax to corresponding LaTeX commands, showing the automated translation system that lets researchers write in familiar markup while producing professional typesetting.}
 \end{longtable}
 }}
 
 {#snote:programmatic_figures} **Programmatic Figure Generation**
 
-Rxiv-Maker's figure generation capabilities are designed to ensure a transparent and reproducible connection between your data and your final visualisations. The system supports two main approaches for creating figures programmatically: script-based generation using Python or R, and diagram rendering from text-based descriptions using Mermaid.
+Rxiv-Maker's figure generation keeps a transparent, reproducible connection between your data and your final visualisations. The system supports two main approaches for creating figures programmatically: script-based generation using Python or R, and diagram rendering from text-based descriptions using Mermaid.
 
-For script-based figures, you place your `.py` or `.R` scripts in the `FIGURES` directory. These scripts often leverage powerful plotting libraries such as Matplotlib [@Hunter2007_matplotlib] or Seaborn [@Waskom2021_seaborn]. During compilation, Rxiv-Maker executes these scripts, and any image files they save (e.g., PNG, PDF, SVG) are automatically detected and can be included in your manuscript. This ensures your visualisations are always synchronised with the underlying data and analysis, as a change in one will trigger the regeneration of the other. This is the method used to produce @sfig:arxiv_growth and @sfig:preprint_trends.
+For script-based figures, you place your `.py` or `.R` scripts in the `FIGURES` directory. These scripts often use plotting libraries such as Matplotlib [@Hunter2007_matplotlib] or Seaborn [@Waskom2021_seaborn]. During compilation, Rxiv-Maker executes these scripts, and any image files they save (e.g., PNG, PDF, SVG) are automatically detected and can be included in your manuscript. This ensures your visualisations are always synchronised with the underlying data and analysis, as a change in one will trigger the regeneration of the other. This is the method used to produce @sfig:arxiv_growth and @sfig:preprint_trends.
 
 For diagrams, such as flowcharts or system architectures, you can use Mermaid [@Mermaid2023_documentation]. You create a `.mmd` file containing a text-based description of your diagram. The framework uses the Mermaid command-line tool to render this description into a vector or raster image. This allows your diagrams to be version-controlled just like code, making them easy to modify and track over time.
 
 {#snote:mathematical_formulas} **Mathematical Formula Support**
 
-Rxiv-Maker seamlessly integrates mathematical notation by translating Markdown-style expressions into high-quality LaTeX mathematics. This allows you to write complex mathematical content using simple, familiar syntax.
+Rxiv-Maker integrates mathematical notation by translating Markdown-style expressions into high-quality LaTeX mathematics. This allows you to write complex mathematical content using simple, familiar syntax.
 
 For inline mathematics, you can use single dollar sign delimiters (`$...$`), allowing formulas like $E = mc^2$ to be embedded directly within your text. For larger, display-style equations, you can use double dollar signs (`$$...$$`) to centre the expression on its own line. For example:
 
@@ -138,13 +138,13 @@ $$
 i\hbar\frac{\partial}{\partial t}\Psi(\mathbf{r},t) = \hat{H}\Psi(\mathbf{r},t)
 $$
 
-The framework's multi-pass translator is designed to protect these mathematical expressions, ensuring they are not accidentally altered during the conversion from Markdown to LaTeX. This robust system supports a wide range of mathematical and statistical notation, from simple symbols to complex multi-line equations, ensuring your quantitative work is always presented clearly and professionally.
+The framework's multi-pass translator protects these mathematical expressions so they are not altered during the conversion from Markdown to LaTeX. It supports mathematical and statistical notation, from simple symbols to multi-line equations.
 
-{#snote:caching_validation} **Intelligent Caching and Validation**
+{#snote:caching_validation} **Caching and Validation**
 
-To accelerate compilation, Rxiv-Maker uses an intelligent caching system that avoids redundant work. It operates by generating a checksum—a unique digital signature—for each figure's dependencies, including the source script and any input data files. A figure is only regenerated if this checksum changes, meaning you can recompile your manuscript rapidly during writing, as only the modified components are rebuilt. This saves considerable time without sacrificing the reproducibility of the final document.
+To speed up compilation, Rxiv-Maker uses a caching system that avoids redundant work. It generates a checksum for each figure's dependencies, including the source script and any input data files. A figure is only regenerated if this checksum changes, so recompilation stays fast during writing because only the modified components are rebuilt. This saves time while keeping the final document reproducible.
 
-Complementing this is a powerful validation framework that acts as a quality-control mechanism. Running `rxiv validate` performs a multi-level check of your manuscript. Before compilation, it looks for missing figure files, broken cross-references, and malformed bibliography entries. During compilation, it parses LaTeX logs to provide clear, understandable error messages. After compilation, it even performs a lightweight scan of the PDF to flag potential rendering issues. This ensures your manuscript is technically sound at every stage.
+Alongside this is a validation framework for quality control. Running `rxiv validate` performs a multi-level check of your manuscript. Before compilation, it looks for missing figure files, broken cross-references, and malformed bibliography entries. During compilation, it parses LaTeX logs to provide clear, understandable error messages. After compilation, it even performs a lightweight scan of the PDF to flag potential rendering issues. This ensures your manuscript is technically sound at every stage.
 
 ## Supplementary Figures
 

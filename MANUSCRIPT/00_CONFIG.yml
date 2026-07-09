@@ -41,13 +41,27 @@ authors:
     orcid: 0000-0002-9151-5477
     x: "@Bruno_MSaraiva"
     linkedin: "bruno-saraiva"
+  - name: "Rita Carlota"
+    affiliations:
+      - "ITQB NOVA"
+    corresponding_author: false
+    co_first_author: false
+    orcid: 0000-0003-3647-1114
   - name: "António D. Brito"
     affiliations:
       - "ITQB NOVA"
     corresponding_author: false
     co_first_author: false
     orcid: 0009-0001-1769-2627
-  - name: "Guillaume Jaquemet"
+  - name: "Iván Hidalgo-Cenalmor"
+    affiliations:
+      - "Turku Bioscience"
+      - "Åbo"
+      - "InFlames"
+    corresponding_author: false
+    co_first_author: false
+    orcid: 0009-0000-8923-568X
+  - name: "Guillaume Jacquemet"
     affiliations:
       - "Åbo"
       - "InFlames"
@@ -61,7 +75,6 @@ authors:
   - name: "Ricardo Henriques"
     affiliations:
       - "ITQB NOVA"
-      - "UCL"
     corresponding_author: true
     co_first_author: false
     email64: "cmljYXJkby5oZW5yaXF1ZXNAaXRxYi51bmwucHQ="
@@ -73,9 +86,6 @@ affiliations:
   - shortname: "ITQB NOVA"
     full_name: "Instituto de Tecnologia Química e Biológica António Xavier, Universidade Nova de Lisboa"
     location: "Oeiras, Portugal"
-  - shortname: "UCL"
-    full_name: "UCL Laboratory for Molecular Cell Biology, University College London"
-    location: "London, United Kingdom"
   - shortname: "Åbo"
     full_name: "Faculty of Science and Engineering, Cell Biology, Åbo Akademi University"
     location: "Turku, Finland"
