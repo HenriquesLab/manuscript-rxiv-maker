@@ -1,12 +1,12 @@
-# Rxiv-Maker: Official Preprint & Comprehensive Example
+# Rxiv-Maker: Official Paper & Comprehensive Example
 
 > 📚 **Dual Purpose Repository**: This repository serves two important roles:
-> 1. **Official Published Preprint** - The rxiv-maker paper published as [arXiv:2508.00836](https://arxiv.org/abs/2508.00836)
+> 1. **Official Published Paper & Preprint** - Published in *Journal of Cell Science* ([10.1242/jcs.265183](https://doi.org/10.1242/jcs.265183)), preprint at [arXiv:2508.00836](https://arxiv.org/abs/2508.00836)
 > 2. **Comprehensive Working Example** - A complete demonstration of all rxiv-maker features
 >
 > Clone it instantly with: `rxiv get-rxiv-preprint`
 
-This repository contains the official rxiv-maker preprint published as [arXiv:2508.00836](https://arxiv.org/abs/2508.00836). This preprint both explains what rxiv-maker is and serves as an extensive demonstration of how scientific preprints can be written using [rxiv-maker](https://github.com/HenriquesLab/rxiv-maker), a framework for writing scientific manuscripts in Markdown with automated figure generation.
+This repository contains the source code for the official rxiv-maker paper, published in *Journal of Cell Science* (DOI: [10.1242/jcs.265183](https://doi.org/10.1242/jcs.265183)) and deposited as preprint [arXiv:2508.00836](https://arxiv.org/abs/2508.00836). This preprint both explains what rxiv-maker is and serves as an extensive demonstration of how scientific preprints can be written using [rxiv-maker](https://github.com/HenriquesLab/rxiv-maker), a framework for writing scientific manuscripts in Markdown with automated figure generation.
 
 ## 📑 Quick Navigation
 
@@ -205,7 +205,7 @@ With complete BibTeX entry generated automatically!
 - **🐳 Docker Support**: [docker-rxiv-maker](https://github.com/HenriquesLab/docker-rxiv-maker) - Containerized execution with pre-configured environment
 - **💻 VS Code Extension**: [vscode-rxiv-maker](https://github.com/HenriquesLab/vscode-rxiv-maker) - IDE integration with syntax highlighting and validation
 - **🌐 Official Website**: [rxiv-maker.henriqueslab.org](https://rxiv-maker.henriqueslab.org) - Documentation, guides, and tutorials
-- **📄 This Repository**: Contains the official preprint (arXiv:2508.00836) and comprehensive usage example
+- **📄 This Repository**: Contains the official paper (JCS doi:10.1242/jcs.265183, arXiv:2508.00836) and comprehensive usage example
 
 ### Documentation & Resources
 - **Getting Started**: [Installation Guide](https://rxiv-maker.henriqueslab.org/getting-started/installation/)
@@ -219,13 +219,13 @@ With complete BibTeX entry generated automatically!
 If you use rxiv-maker or reference this preprint, please cite:
 
 ```bibtex
-@misc{saraiva_2025_rxivmaker,
-  title={Rxiv-Maker: an automated template engine for streamlined scientific publications},
-  author={Bruno M. Saraiva and António D. Brito and Guillaume Jaquemet and Ricardo Henriques},
-  year={2025},
-  eprint={2508.00836},
-  archivePrefix={arXiv},
-  url={https://arxiv.org/abs/2508.00836}
+@article{saraiva_2025_rxivmaker,
+  title={Rxiv-Maker: An automated template engine for streamlined scientific publications},
+  author={Bruno M. Saraiva and Rita Carlota and António D. Brito and Iván Hidalgo-Cenalmor and Guillaume Jacquemet and Ricardo Henriques},
+  journal={Journal of Cell Science},
+  year={2026},
+  doi={10.1242/jcs.265183},
+  url={https://doi.org/10.1242/jcs.265183}
 }
 ```
 
